@@ -4,7 +4,7 @@ import "../../components_css/core_css/navbar.css";
 import {makeStyles} from '@material-ui/core/styles';
 const NavBar = () => {
   const useStyles = makeStyles({
-    list:{color:"white",textDecoration:"none"}
+    list:{color:"white",textDecoration:"none",marginRight:"10"}
   });
   const styles = useStyles();
   return (
