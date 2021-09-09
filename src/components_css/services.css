@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+#each-service-layout {
+  display: flex;
+  justify-content: space-between;
+  min-width: 240px;
+}
+#details {
+  align-self: center;
+  max-width: 300px;
+  text-align: justify;
+}
+#container-launch {
+  justify-items: center;
+  width: 60%;
+  padding-top: 80px;
+  padding-left: 150px;
+}
+#naruto {
+  height: 595px;
+}
+
+#hidden-field {
+  cursor: pointer;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  text-align: center;
+  width: 400px;
+  display: block;
+}
+.launch {
+  background-color: #e59866;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+@media only screen and (max-width: 1150px) {
+  #container-launch {
+    padding-left: 20px;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  #each-service-layout {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  #container-launch {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 583px) {
+  #each-service-layout {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #container-launch {
+    padding: 0;
+    width: 300px;
+    margin-top: 10px;
+  }
+  .container-input,
+  .container-name-input,
+  .launch,
+  #hidden-field {
+    width: 100%;
+    margin-left: 5px;
+  }
+  #naruto {
+    align-self: center;
+    height: 300px;
+    margin-top: 20px;
+  }
+}

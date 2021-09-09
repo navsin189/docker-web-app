@@ -1,0 +1,45 @@
+#navbar-layout {
+  border: 1px solid rgb(19, 136, 223);
+  background-color: rgb(19, 136, 223);
+  box-shadow: 4px 4px 4px rgb(200, 230, 251);
+  height: 70px;
+  min-width: 240px;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 70px;
+}
+nav > ul {
+  display: flex;
+  list-style: none;
+}
+nav > ul > a {
+  text-decoration: none;
+  margin-right: 15px;
+  color: white;
+  transition: font-size ease 0.5s;
+}
+a:visted,
+a:link {
+  color: white;
+}
+a:hover {
+  font-size: 20px;
+}
+@media only screen and (max-width: 583px) {
+  #navbar-layout {
+    height: 100px;
+  }
+  nav {
+    justify-content: center;
+    height: 100px;
+  }
+  nav > ul {
+    flex-direction: column;
+  }
+  a {
+    margin: 10px 0;
+  }
+}

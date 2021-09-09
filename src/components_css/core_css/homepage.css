@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+#homepage-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(0, 41, 59);
+}
+#service-layout {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#ip-address {
+  width: 300px;
+  height: 40px;
+  font-size: 26px;
+  padding-left: 5px;
+  border: none;
+  background-color: lightgreen;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+::placeholder {
+  color: #333;
+  opacity: 0.7;
+}
+#ip-address:focus {
+  outline: none;
+  color: #34495e;
+}
+#ip-button {
+  height: 40px;
+  width: 40px;
+  padding-top: 2px;
+  background-color: lightgreen;
+  border: none;
+  border-left: 1px solid white;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 851px) {
+  #service-layout {
+    align-items: center;
+    justify-content: center;
+  }
+}
