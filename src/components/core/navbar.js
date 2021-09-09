@@ -1,14 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../../components_css/core_css/navbar.css";
+import {makeStyles} from '@material-ui/core/styles';
 const NavBar = () => {
+  const useStyles = makeStyles({
+    list:{color:"white",textDecoration:"none"}
+  });
+  const styles = useStyles();
   return (
     <div id="navbar-layout">
       <nav>
         <ul>
-          <Link to="/">Home</Link>
-          <Link to="/login">Login</Link>
-          <Link to="/signup">SignUp</Link>
+          <Link to="/" className={styles.list}>Home</Link>
+          <Link to="/login" className={styles.list}>Login</Link>
+          <Link to="/signup" className={styles.list}>SignUp</Link>
         </ul>
       </nav>
     </div>

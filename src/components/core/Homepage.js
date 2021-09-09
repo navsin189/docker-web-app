@@ -2,17 +2,13 @@ import {React,useEffect} from "react";
 import { ArrowRight,Box } from "react-bootstrap-icons";
 // import Container from "/public/assests/images/container.png";
 import "../../components_css/core_css/homepage.css";
-import {makeStyles} from '@material-ui/core/styles';
 import {Link} from 'react-router-dom';
 import Card from "../byproduct/card";
 const HomePage = () => {
   useEffect(()=>{
     document.title='Docker World'
   },[])
-  const useStyles = makeStyles({
-    list:{color:"white",textDecoration:"none"}
-  });
-  const styles = useStyles();
+  
 
   return (
     <div id="homepage-layout">
@@ -38,7 +34,7 @@ const HomePage = () => {
       </form>
       <h2>Services Available</h2>
       <div id="service-layout">
-        <Link to="/service" className={styles.list}>
+        <Link to="/service" >
         <Card
           src="/assests/images/container.png"
           alt="container snapshot"

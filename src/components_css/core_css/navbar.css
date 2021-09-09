@@ -14,16 +14,12 @@ nav {
 nav > ul {
   display: flex;
   list-style: none;
-}
-nav > ul > a {
   text-decoration: none;
   margin-right: 15px;
   color: white;
-  transition: font-size ease 0.5s;
 }
-a:visted,
-a:link {
-  color: white;
+a {
+  transition: font-size ease 0.5s;
 }
 a:hover {
   font-size: 20px;
