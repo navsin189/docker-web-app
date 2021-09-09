@@ -6,20 +6,20 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  height: 780px;
+  height: 600px;
 }
 #signup-layout {
   display: flex;
   justify-content: space-between;
 }
 #user-login {
-  margin-top: 40px;
+  margin-top: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
   min-width: 240px;
 }
 #user-signup {
-  margin-top: 180px;
+  margin-top: 100px;
   margin-left: 150px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -63,7 +63,10 @@
   margin-bottom: 20px;
 }
 #pirate {
-  height: 780px;
+  height: 600px;
+}
+#sponge {
+  height: 300px;
 }
 
 @media only screen and (max-width: 1226px) {

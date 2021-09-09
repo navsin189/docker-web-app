@@ -39,7 +39,7 @@ const Login = () => {
           Login
         </button>
       </form>
-      <img src="/assests/images/spongebob.png" alt="sponge" />
+      <img src="/assests/images/spongebob.png" alt="sponge" id="sponge" />
     </div>
   );
 };
